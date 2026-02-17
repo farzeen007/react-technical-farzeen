@@ -1,16 +1,61 @@
-# React + Vite
+# Task Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple task management application built with **React**, **Zustand**, and **Vite**, supporting task CRUD, search, and filtering.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Setup Instructions
 
-## React Compiler
+1. **Clone the repository**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+git clone https://github.com/farzeen007/react-technical-farzeen.git
+cd <repo-folder>
 
-## Expanding the ESLint configuration
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Install dependencies
+
+```bash
+npm install
+```
+Start the development server
+
+```bash
+npm run dev
+
+```
+Open in browser
+Visit http://localhost:5173 (default Vite port).
+
+
+🏗 Architecture
+
+Vite + React – Frontend framework and build tool.
+
+Zustand – State management with persist middleware for local storage persistence.
+
+taskStore handles tasks, filtering, searching, and CRUD operations.
+
+userStore manages login state and logout.
+
+Components
+
+Dashboard – Main page displaying tasks, loader, and login state.
+
+DashboardTaskBoard – Displays tasks based on filters.
+
+Loader – Shows while fetching tasks.
+
+
+💡 Improvements if More Time
+
+Implement real authentication (JWT + refresh token + protected routes).
+
+Add infinite scrolling or pagination for large task lists.
+
+Add drag-and-drop task ordering.
+
+Improve error handling with retry and notifications.
+
+Enhance UI/UX with task categories, priority, due dates.
