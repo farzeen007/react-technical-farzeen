@@ -10,7 +10,7 @@ A simple task management application built with **React**, **Zustand**, and **Vi
 
 ```bash
 git clone https://github.com/farzeen007/react-technical-farzeen.git
-cd <repo-folder>
+cd react-technical-farzeen
 
 ```
 
